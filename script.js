@@ -1,27 +1,33 @@
 /* 
+ - The computer needs to drop a random value from 3 values.
+ - Once the computer has decided a value, this has to be returned. (It is the function main function).
+ - The idea is that the computer returns a string value, but for now, lets try with numbers.
 
-This is a rock, paper and scissors game,
-The user has to enter a value "rock, paper or scissors"
-once the value has been entered, the computer must have 
-previously loaded a value which could be of of three prior values
- "rock, paper and scissor". 
- The values are compared, if they are equal there is a draw,
- if they are not equal, either the computer or the player has won.
- -rock beats scissors
- -scissors beat paper
- -paper beat rock
+*/
 
- if the player loses, the game ends.
- if the player wins, the game ends.
- - by both winning or losing, the game starts again.
- 
- */
-
- function getComputerChoice(){
-    let rock = 'rock'
-    let scissor = 'scissor'
-    let paper = 'paper'
-    let result = rock * scissor * paper;
+function playRound (playerSelection, computerSelection){
+    
+}
+function getComputerChoice(){
+    let result = '';
+    let choice = Math.floor(Math.random() * 3 ) + 1 ;
+    if (choice === 1 ){
+        result = 'Rock';
+    } else if (choice === 2 ){
+        result = 'Paper';
+    } else if (choice === 3 ){
+        result = 'Scissor';
+    } else {
+        ' '
+    }
     return result;
- }
- console.log(getComputerChoice);
+}
+const playerSelection = prompt('rock, paper or scissors ??? ');
+const computerSelection = getComputerChoice();
+
+console.log(playRound(playerSelection, computerSelection));
+
+
+
+
+
