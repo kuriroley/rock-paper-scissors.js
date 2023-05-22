@@ -10,8 +10,14 @@ function playRound (playerSelection, computerSelection){   //how can I make this
     let gameResult = ''
     if (playerSelection === computerSelection){
         gameResult = 'tie // あいこ';
-    } else if (playerSelection != computerSelection){
-        gameResult = 'not equal // 違う'
+    } else if (playerSelection === 'paper' && computerSelection === 'rock'){
+        gameResult = 'paper wins! // パー勝った'
+    } else if (playerSelection === 'rock' && computerSelection === 'scissor'){
+        gameResult = 'rock wins! // グ－勝った'
+    } else if (playerSelection === 'scissor' && computerSelection === 'paper'){
+        gameResult = 'scissor wins! // チョキ勝った'
+    } else {
+        gameResult = 'Computer wins! // パソコン勝った'
     }
 
     return gameResult;
