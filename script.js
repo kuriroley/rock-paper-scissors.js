@@ -1,14 +1,22 @@
 /* 
- - The computer needs to drop a random value from 3 values.
- - Once the computer has decided a value, this has to be returned. (It is the function main function).
- - The idea is that the computer returns a string value, but for now, lets try with numbers.
+ - the computer is able to return values, but i cannot set a way to perform a game? 
 
 */
+let gameTurns = 1;
 
-function playRound (playerSelection, computerSelection){
+
+function playRound (playerSelection, computerSelection){   //how can I make this work?
     
+    let gameResult = ''
+    if (playerSelection === computerSelection){
+        gameResult = 'tie // あいこ';
+    } else if (playerSelection != computerSelection){
+        gameResult = 'not equal // 違う'
+    }
+
+    return gameResult;
 }
-function getComputerChoice(){
+function getComputerChoice(){       // it works, the value is randomly returned
     let result = '';
     let choice = Math.floor(Math.random() * 3 ) + 1 ;
     if (choice === 1 ){
@@ -22,9 +30,9 @@ function getComputerChoice(){
     }
     return result;
 }
-const playerSelection = prompt('rock, paper or scissors ??? ');
-const computerSelection = getComputerChoice();
-
+const playerSelection = (prompt('rock, paper or scissors ??? ').toLowerCase());
+const computerSelection = (getComputerChoice().toLowerCase());
+console.log(computerSelection)
 console.log(playRound(playerSelection, computerSelection));
 
 
