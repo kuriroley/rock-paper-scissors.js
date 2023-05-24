@@ -13,7 +13,7 @@ function game(){
                 gameResult = 'tie // あいこ';
         } else if (playerSelection === 'paper' && computerSelection === 'rock'){
                 gameResult = 'paper wins! // パー勝った'
-        } else if (playerSelection === 'rock' && computerSelection === 'scissor'){
+        } else if (playerSelection === 'rock'&& computerSelection === 'scissor'){
                 gameResult = 'rock wins! // グ－勝った'
         } else if (playerSelection === 'scissor' && computerSelection === 'paper'){
                 gameResult = 'scissor wins! // チョキ勝った'
@@ -37,7 +37,7 @@ function game(){
         }
         return result;
     }
-    const playerSelection = (prompt('rock, paper or scissors ??? ').toLowerCase());
+    const playerSelection = (prompt('じゃんけん! // rock, paper or scissors ??? ').toLowerCase());
     const computerSelection = (getComputerChoice().toLowerCase());
     console.log(computerSelection)
     console.log('ラウンド/Rounds: ' + gameRounds)
