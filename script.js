@@ -40,12 +40,11 @@ function game(){
     const playerSelection = (prompt('rock, paper or scissors ??? ').toLowerCase());
     const computerSelection = (getComputerChoice().toLowerCase());
     console.log(computerSelection)
-    console.log('Rounds: ' + gameRounds)
+    console.log('ラウンド/Rounds: ' + gameRounds)
     console.log(playRound(playerSelection, computerSelection));
     gameRounds++;
 
 }
-
 do{
     game()
 }while (gameRounds <= 5)
