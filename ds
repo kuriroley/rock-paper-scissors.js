@@ -1,0 +1,59 @@
+[33mcommit dbd2b6d3a5e4437d0ab0ab88809c298fdd3a211c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/ui-test[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mui-test[m[33m, [m[1;32mtest-branch[m[33m)[m
+Author: kuriroley <christian.rodriguez@tutanota.com>
+Date:   Wed May 24 17:17:25 2023 +0900
+
+    modified japanese text
+
+[33mcommit a17691bbd17a207c86caccba8cc602738c6a3da8[m
+Author: kuriroley <christian.rodriguez@tutanota.com>
+Date:   Wed May 24 17:08:50 2023 +0900
+
+    added japanese text
+
+[33mcommit bd6285938b1b131ef1bd02156c24ba576daf1e10[m
+Author: kuriroley <christian.rodriguez@tutanota.com>
+Date:   Wed May 24 17:05:22 2023 +0900
+
+    added loop and round counter to the game
+
+[33mcommit d6e2132d11c97df8baf13f375d309d493f2ef8fb[m
+Author: kuriroley <christian.rodriguez@tutanota.com>
+Date:   Mon May 22 21:26:06 2023 +0900
+
+    user and computer logic were fixed, now the user and the computer can win
+
+[33mcommit e76dc3e017983518eb102db65d1aa245e52331a2[m
+Author: kuriroley <christian.rodriguez@tutanota.com>
+Date:   Mon May 22 21:09:16 2023 +0900
+
+    added japanese text and some changes in game logic
+
+[33mcommit d828c081dd1ca2ae5df722ddc6cb376a5b0de837[m
+Author: kuriroley <christian.rodriguez@tutanota.com>
+Date:   Sun May 21 21:01:42 2023 +0900
+
+     changes
+
+[33mcommit 0c1874f619a8859e01e3cc3334de9d0e588e4b6c[m
+Author: kuriroley <christian.rodriguez@tutanota.com>
+Date:   Wed May 17 16:41:46 2023 +0900
+
+    added some comments
+
+[33mcommit 0072139d3ef8eca68ecd62b770ea015488e50d92[m
+Author: kuriroley <christian.rodriguez@tutanota.com>
+Date:   Wed May 17 15:51:23 2023 +0900
+
+    script.js and style.css were added
+
+[33mcommit c1a1f72caf41ef5546e667ef597e14bfd2429786[m
+Author: kuriroley <christian.rodriguez@tutanota.com>
+Date:   Wed May 17 15:37:32 2023 +0900
+
+    Add index.html
+
+[33mcommit 62ea43c506b039f9bb130d0e939d9f41162331f0[m
+Author: Christian Allan Rodriguez <87399315+kuriroley@users.noreply.github.com>
+Date:   Wed May 17 15:31:34 2023 +0900
+
+    Initial commit
