@@ -1,4 +1,3 @@
-let roundTracker = 1;
 let computerScore = 0;
 let playerScore = 0;
 let playerAnswer = '';
@@ -19,7 +18,12 @@ const rockButton = document.querySelector('#rock-button');
 const paperButton = document.querySelector('#paper-button');
 const scissorButton = document.querySelector('#scissor-button');
 
+const resetButton = document.querySelector('#game-reset');
+
+//style for some dom elements
+document.querySelector('#game-reset').style.display = 'none';
 //dom buttons events
+
 rockButton.addEventListener('click', () =>{
     playerAnswer = 'rock';
     computerAnswer = getComputerAnswer();
@@ -27,6 +31,7 @@ rockButton.addEventListener('click', () =>{
     gameData();
     if(playerScore === 5 || computerScore === 5){
         declareWinner();
+        document.querySelector('#game-reset').style.display = 'block';
      }
 
 })
@@ -37,6 +42,7 @@ paperButton.addEventListener('click', () => {
     gameData();
     if(playerScore === 5 || computerScore === 5){
         declareWinner();
+        document.querySelector('#game-reset').style.display = 'block';
      }
 })
 scissorButton.addEventListener('click', () => {
@@ -46,8 +52,12 @@ scissorButton.addEventListener('click', () => {
     gameData();
     if(playerScore === 5 || computerScore === 5){
         declareWinner();
+        document.querySelector('#game-reset').style.display = 'block';
      }
 })
+resetButton.addEventListener('click', ()=>{
+    restartGame();
+});
 
 //get computer answer funtion
 function getComputerAnswer(){
@@ -103,18 +113,18 @@ scoreContainer.appendChild(paraPlayerAnswer);
 paraPlayerAnswer.textContent = `Your choice was: ` + playerAnswer;
 scoreContainer.appendChild(paraComputerAnswer);
 paraComputerAnswer.textContent = `Computer's answer was: ` + computerAnswer;
-
-scoreContainer.appendChild(paraRoundTracker);
-paraRoundTracker.textContent = `Round: ${roundTracker++}`;
-if (roundTracker > 5){
-    paraRoundTracker.textContent = `NO MORE ROUNDS!`;
-    return false;
-};
 scoreContainer.appendChild(paraPlayerScore);
 paraPlayerScore.textContent = `Player score is: ${playerScore}`;
 scoreContainer.appendChild(paraComputerScore);
 paraComputerScore.textContent = `Computer score is: ${computerScore}`;
-
+}
+//function to restart the game
+function restartGame(){
+    playerScore = 0;
+    computerScore = 0;
+    scoreContainer.textContent = '';
+    winnerContainer.textContent = '';
+    document.querySelector('#game-reset').style.display = 'none';
 }
 
 
