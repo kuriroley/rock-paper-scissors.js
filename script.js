@@ -129,15 +129,6 @@ function restartGame(){
 
 
 
-// console.log(`Computer Selection: ${computerSelection}`);
-//     console.log('ラウンド/Rounds: ' + gameRounds)
-//     // console.log(playRound(playerSelection, computerSelection));
-//     console.log(`Computer Score:  ${computerScore}`);
-//     console.log(`User Score: ${userScore}`);    
-
-//     gameRounds++;
-
-
 
 
 
