@@ -4,7 +4,6 @@
 }
 body{
     font-family: 'Times New Roman', Times, serif;
-    
 }
 
 .header{
@@ -17,22 +16,54 @@ body{
 }
 .main-container{
     display: flex;
-    background-color: slategray;
-    height: 500px;
+    background-color: rgb(47, 1, 1);
+    height: 660px;
     width: 100%;
     align-items: center;
     justify-content: space-around;
 }
 .info-container{
-    align-self: flex-start;
-    border: 2px solid black;
+    align-self: center;
+    color: black;
+    text-align: center;
+    background-color:burlywood ;
+    border: 5px ridge black;
     width: 300px;
-    height: 200px;
+    height: 400px;
 }
-.game-container{
+.score-container{
+    margin-top: 10px;
+} 
 
-    background-color: white;
-    border: 2px solid black;
+.game-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(130, 0, 0);
+    border: 10px ridge black;
     height: 400px;
     width: 600px;
+}
+.button-container{
+    display: flex;
+    padding: 10px;
+    flex: 1;
+    justify-content: space-around;
+}
+.button-container img{
+    width: 150px;
+    border-radius: 4px;
+}
+.button-container img:hover{
+    opacity: .8;
+    transition: 0.2s;
+}
+
+.footer{
+    background-color: bisque;
+    display: flex;
+    height: 30px;
+    font-size: 20px;
+    justify-content: center;
+    bottom: 0;
 }

@@ -126,11 +126,3 @@ function restartGame(){
     winnerContainer.textContent = '';
     document.querySelector('#game-reset').style.display = 'none';
 }
-
-
-
-
-
-
-
-
